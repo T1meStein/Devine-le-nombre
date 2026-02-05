@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+  <script>
+    function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+var nb = getRandomInt(1,100);
+var nb_devine = 0;
+while (nb_devine!=nb) 
+{
+  nb_devine=prompt("Devine le nombre entre 1 et 100 :") ;
+  nb_devine=parseFloat(nb_devine)
+  if (nb_devine>nb){
+      document.write("Trop grand !")
+  }
+  else if (nb_devine<nb){
+      document.write("Trop petit !")
+  }
+  else{
+      document.write("Tu as trouvé le nombre, c'était bien : "+nb)  
+    }
+
+}
+  </script>
+</body>
+</html>
