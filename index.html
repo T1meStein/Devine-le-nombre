@@ -15,10 +15,9 @@
 
 var nb = getRandomInt(1,100);
 var nb_devine = prompt("Devine le nombre entre 1 et 100 :") ;
+var nb_devine = parseFloat(nb_devine);
 while (nb_devine!=nb) 
 {
- 
-  nb_devine=parseFloat(nb_devine)
   if (nb_devine>nb){
        nb_devine=prompt("Trop grand ! Devine le nombre entre 1 et 100 :") ;
   }
