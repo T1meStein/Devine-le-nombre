@@ -14,22 +14,21 @@
 }
 
 var nb = getRandomInt(1,100);
-var nb_devine = 0;
+var nb_devine = prompt("Devine le nombre entre 1 et 100 :") ;
 while (nb_devine!=nb) 
 {
-  nb_devine=prompt("Devine le nombre entre 1 et 100 :") ;
+ 
   nb_devine=parseFloat(nb_devine)
   if (nb_devine>nb){
-      console.log("Trop grand !")
+       nb_devine=prompt("Trop grand ! Devine le nombre entre 1 et 100 :") ;
   }
   else if (nb_devine<nb){
-      console.log("Trop petit !")
+       nb_devine=prompt("Trop petit !Devine le nombre entre 1 et 100 :") ;
   }
   else{
       console.log("Tu as trouvé le nombre, c'était bien : "+nb)  
     }
-
-}
+ }
   </script>
 </body>
 </html>
